@@ -1,0 +1,26 @@
+ Том в устройстве C имеет метку Disk
+ Серийный номер тома: 7AEC-F2D9
+
+ Содержимое папки C:\Users\Code
+
+24.06.2021  17:08    <DIR>          .
+24.06.2021  17:08    <DIR>          ..
+24.06.2021  17:06    <DIR>          .idea
+24.06.2021  16:56               635 1.txt
+24.06.2021  09:20               497 amout_of_most_popular_word_in_file.py
+24.06.2021  16:50               918 average_scores.py
+24.06.2021  17:07                99 cmd_args.py
+21.06.2021  15:11             5 884 coding.py
+23.06.2021  17:57             3 540 coding1.py
+24.06.2021  15:10               971 data.txt
+21.06.2021  17:39               235 filter().py
+13.06.2021  12:50               668 list_comprehension.py
+23.06.2021  18:56                 0 lowspeed_function_resolve.py
+24.06.2021  08:34               447 razvertka_str_digits.py
+23.06.2021  16:45               636 spiral1.py
+24.06.2021  17:08                 0 text.txt
+23.06.2021  18:33               214 update_dictionary.py
+13.06.2021  12:19    <DIR>          venv
+24.06.2021  08:34               111 war_and_peace_words_count.py
+              15 файлов         14 855 байт
+               4 папок  68 649 091 072 байт свободно
