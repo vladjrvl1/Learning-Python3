@@ -1,16 +1,3 @@
-import sys, subprocess, math
-# with open(input(), 'r', encoding='utf-8') as f:
-#     txt_lst = [list(map(int, i.strip().split(';')[1:])) for i in f]
-#     txt_lst.append([0, 0, 0])
-#     for i in range(len(txt_lst)-1):
-#         avg = 0
-#         for j in range(3):
-#             avg += txt_lst[i][j]
-#             txt_lst[-1][j] += txt_lst[i][j]
-#         print(avg / 3)
-#     for i in txt_lst[-1]:
-#         print(i/3, end=' ')
-
 with open('data.txt', 'r') as f:
     txt_lst = [list(map(int, i.strip().split(';')[1:])) for i in f]
     txt_lst.append([0, 0, 0])
