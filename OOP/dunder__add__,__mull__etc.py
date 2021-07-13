@@ -39,3 +39,5 @@ class Vector:
                 return Vector()
         else:
             print(f"Вектор нельзя умножать с {other}")
+v = Vector(1,2,3)
+print(v)

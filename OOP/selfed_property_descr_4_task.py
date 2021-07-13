@@ -15,7 +15,6 @@ class Descriptor:
         self.__name = name
 
     def __get__(self, instance, owner):
-        print('call __get__')
         return instance.__dict__[self.__name]
 
     def __set__(self, instance, value):
@@ -25,67 +24,67 @@ class Descriptor:
         del instance.__dict__[self.__name]
 
 
-class Calendar:
-    """
-    1.
-    Via Descriptors
-    """
-    day = Descriptor()
-    month = Descriptor()
-    year = Descriptor()
-
-    def __init__(self, date, d_format='dd-mm-yyyy'):
-        if d_format == 'dd-mm-yyyy':
-            self.day = date[:2]
-            self.month = date[3:5]
-            self.year = date[6:]
-
-    def __str__(self):
-        return f'{self.day}-{self.month}-{self.year}'
-
-
 # class Calendar:
 #     """
 #     1.
-#     Via Property
+#     Via Descriptors
 #     """
-#     __slots__ = ['__day', '__month', '__year']
+#     day = Descriptor()
+#     month = Descriptor()
+#     year = Descriptor()
+#
+#     def __init__(self, date, d_format='dd-mm-yyyy'):
+#         if d_format == 'dd-mm-yyyy':
+#             self.day = date[:2]
+#             self.month = date[3:5]
+#             self.year = date[6:]
+#
+#     def __str__(self):
+#         return f'{self.day}-{self.month}-{self.year}'
 
-# def __init__(self, date, d_format='dd-mm-yyyy'):
-#     if d_format == 'dd-mm-yyyy':
-#         self.__day = date[:2]
-#         self.__month = date[3:5]
-#         self.__year = date[6:]
 
-# @property
-# def day(self):
-#     print('getter')
-#     return self.__day
+class Calendar:
+    """
+    1.
+    Via Property
+    """
+    __slots__ = ['__day', '__month', '__year']
 
-# @day.setter
-# def day(self, value):
-#     print('setter')
-#     self.__day = value
+    def __init__(self, date, d_format='dd-mm-yyyy'):
+        if d_format == 'dd-mm-yyyy':
+            self.__day = date[:2]
+            self.__month = date[3:5]
+            self.__year = date[6:]
 
-# @property
-# def month(self):
-#     print('getter')
-#     return self.month
+    @property
+    def day(self):
+        print('getter')
+        return self.__day
 
-# @month.setter
-# def month(self, value):
-#     print('setter')
-#     self.__month = value
+    @day.setter
+    def day(self, value):
+        print('setter')
+        self.__day = value
 
-# @property
-# def year(self):
-#     print('getter')
-#     return self.__year
+    @property
+    def month(self):
+        print('getter')
+        return self.month
 
-# @year.setter
-# def year(self, value):
-#     print('setter')
-#     self.__year = value
+    @month.setter
+    def month(self, value):
+        print('setter')
+        self.__month = value
+
+    @property
+    def year(self):
+        print('getter')
+        return self.__year
+
+    @year.setter
+    def year(self, value):
+        print('setter')
+        self.__year = value
 
 
 class Rectangle:
