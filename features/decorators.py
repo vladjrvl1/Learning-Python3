@@ -36,6 +36,7 @@ def decor_squared_int(fn):
     d = dict()
 
     def wrapper(*args):
+        print(d)
         if args not in d:
             d[args[0]] = fn(*args)
             print(d)

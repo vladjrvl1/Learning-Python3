@@ -230,3 +230,6 @@ for i in range(len(a)):
         l.append(a[i])
 # [l.append(x) for x in a if x not in l and a.count(x) > 1]
 print(*l)
+
+f = open('data.txt')
+print(type(f))
